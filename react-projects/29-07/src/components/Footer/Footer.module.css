@@ -1,0 +1,82 @@
+.footer{
+    background-color: var(--primary-color);
+    padding: 58px;
+}
+.leftPara{
+    color: var(--white-color);
+    margin-top: 16px;
+}
+.FooterNav{
+    column-gap: 67px;
+    padding-left: 135px;
+}
+.FooterNav>.FooterNavList{
+    gap: 20px;
+}
+.FooterNav>.FooterNavList>a{
+    color: var(--white-color);
+}
+.bottomCallMsg{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 8px;
+    -webkit-gap: 8px;
+    color: var(--white-color);
+    width: max-content;
+}
+.bottomCallMsg+.bottomCallMsg{
+    margin-top: 6px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .footer{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .FooterNav{
+        padding-left: 30px;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .footer{
+        padding: 28px 4px;
+    }
+    .FooterNav{
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .FooterNav>.FooterNavList{
+        gap: 12px;
+    }
+    .FooterLogo{
+        width: 250px;
+    }
+    .FooterLastColumn{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 767px){
+    .FooterLogo{
+        width: 222px;
+    }
+    .FooterLastColumn{
+        flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        margin-top: 0;
+    }
+    .FooterNav{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 575px){
+    .FooterNav{
+        column-gap: 0;
+    }
+    .FooterNavList + .FooterNavList{
+        margin-top: 12px;
+    }
+}

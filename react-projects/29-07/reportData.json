@@ -1,0 +1,20 @@
+{
+    "surgeons": {
+      "percentage": 80,
+      "title": "Surgeons",
+      "description": "The following graphic shows the level of progress of prepared surgeons over the week in the selected hospital.",
+      "icon": "/images/surgeon.svg"
+    },
+    "anaesthetics": {
+      "percentage": 50,
+      "title": "Anaesthetics",
+      "description": "The following graphic shows the level of progress of prepared anaesthetics over the week in the selected hospital.",
+      "icon": "/images/anaesthetics.svg"
+    },
+    "staff": {
+      "percentage": 30,
+      "title": "Staff",
+      "description": "The following graphic shows the level of progress of prepared staff over the week in the selected hospital.",
+      "icon": "/images/staff.svg"
+    }
+  }

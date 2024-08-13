@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "title": "Staff was confirmed",
+      "message": "Theatre 1 - Gynaecology",
+      "time": "10:31 AM",
+      "date": "Tue, 4 Jun - AM",
+      "mark_as_read": false
+    },
+    {
+      "id": 2,
+      "title": "Surgeon was confirmed",
+      "message": "Theatre 1 - General",
+      "time": "10:12 AM",
+      "date": "Tue, 4 Jun - AM",
+      "mark_as_read": false
+    }
+  ]

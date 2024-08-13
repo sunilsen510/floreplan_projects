@@ -1,0 +1,624 @@
+.TableBlockInner{
+    max-width: 100%;
+    padding-left: calc(12.5% - 16px);
+    padding-right: calc(12.5% - 16px);
+}
+.topBothBtn{
+    padding: 34px 12.5%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.dateUpdates{
+    background-color: transparent;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    gap: 5px;
+    font-weight: var(--bold700);
+    outline: none;
+    padding: 9px 12px;
+    border-radius: var(--radius24);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+.dateUpdates span{
+    font-weight: var(--regular400);
+}
+.RightBothBtn,
+.LeftBothBtn{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 24px;
+}
+.LeftBothBtn{
+    gap: 10px;
+}
+.DayTop{
+    background-color: var(--gray2-color);
+    padding: 15px 12px;
+    text-align: center;
+}
+.MobileSpaceShow .DayTop{
+    padding: 29px 12px;
+}
+.DaysRow{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1px;
+    margin-bottom: 8px;
+}
+.DaysRow .Columns{
+    border: 1px solid var(--gray2-color);
+}
+.DaysRow .Columns:first-child{
+    border: none;
+}
+.DayTop>span{
+    font-size: var(--heading5);
+    font-weight:var(--bold700);
+    color: var(--blue-zodiac);
+}
+.DayTop>span>small{
+    font-size: var(--heading5);
+}
+.DayTop>label,
+.SurgenSpecial li .ProgressBarArea{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 7px;
+    margin-top: 8px;
+}
+.DayTop>label span{
+    color: var(--black2-color);
+}
+.ProgressBar{
+    width: 100%;
+    background-color: var(--blue2-gray2-color);
+    height: 5px;
+    border-radius: 0 5px 5px 0;
+}
+.FullResult .ProgressBar>*{
+    background-color: var(--green-color);
+}
+.halfResult .ProgressBar>*{
+    background-color: var(--yellow-color);
+}
+.quaterResult .ProgressBar>*{
+    background-color: var(--red-color);
+}
+.SurgenSpecial{
+    padding: 6px 13px;
+}
+.SurgenSpecial ul{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    gap: 6px;
+}
+
+/* Theatre Blog */
+.TheatreLeft{
+    flex: 0 0 calc(12.5% - 37px);
+    -webkit-flex: 0 0 calc(12.5% - 37px);
+    max-width: calc(12.5% - 37px);
+    padding-right: 1px;
+}
+.TheatreLeft h6{
+    background-color: var(--blue2-gray2-color);
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.TheatreRight{
+    flex: 0 0 calc(100% - 12.5% + 37px);
+    -webkit-flex: 0 0 calc(100% - 12.5% + 37px);
+    max-width: calc(100% - 12.5% + 37px);
+}
+.TheatreRow + .TheatreRow{
+    margin-top: 1px;
+}
+.TheatreRowField + .TheatreRowField{
+    margin-top: 20px;
+}
+.TheatreAm{
+    flex: 0 0 37px;
+    -webkit-flex: 0 0 37px;
+    max-width: 37px;
+    border: 1px solid var(--blue2-gray2-color);
+}
+.TheatreColumns{
+    flex: 0 0 calc(100% - 37px);
+    -webkit-flex: 0 0 calc(100% - 37px);
+    max-width: calc(100% - 37px);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    padding-left: 1px;
+}
+.InColumn{
+    cursor: pointer;
+    background-color: var(--blue2-gray2-color);
+}
+.EditTemplate .InColumn,
+.CursorNone .InColumn{
+    cursor: auto;
+}
+.InColumnTop{
+    background-color: var(--blue2-gray2-color);
+    padding: 4px;
+    text-align: center;
+    border: 1px solid var(--blue2-gray2-color);
+    min-height: 30px;
+}
+.InColumnBottom{
+    text-align: center;
+    padding: 6px;
+    display: flex;
+    -webkit-display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 16px;
+    border: 1px solid var(--blue2-gray2-color);
+    min-height: 40px;
+    background-color: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+.GroupCheckBox{
+    text-align: center;
+    display: flex;
+    -webkit-display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 16px;
+    margin-left: 0;
+    height: 16px;
+}
+.InColumnBottom:not(.CursorNone .InColumnBottom):hover{
+    background-color: #E7ECF2;
+}
+.EditTemplate .InColumnBottom:hover{
+    background-color: var(--white-color);
+}
+.UnavailableBox{
+    background-color: var(--whitelight-color) !important;
+}
+.EditTemplate .UnavailableBox{
+    background-color: var(--white-color) !important;
+}
+.InColumnBottom>div:first-child,
+.GroupCheckBox>div:first-child{
+    margin-left: -12px;
+}
+.InColumnBottom>div>label,
+.GroupCheckBox>div>label{
+    font-size: 0;
+    padding: 0;
+}
+.InColumnBottom>div>label::before,
+.GroupCheckBox>div>label::before{
+    border: none;
+    background-color: #9B9EAA;
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    cursor: pointer;
+}
+.InColumnBottom>div> input:checked + label::before,
+.GroupCheckBox>div> input:checked + label::before{
+    background-color: var(--green-color);
+}
+.InColumnBottom>div>label::after,
+.GroupCheckBox>div>label::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none"><path d="M0.5 3.5L2.16667 5L5.5 1" stroke="white" stroke-linejoin="round"/></svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+.CheckBoxBlock>div input{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    margin: 0 !important;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.CheckBoxBlock>div:first-child{
+    margin-left: -24px;
+    position: relative;
+}
+.CheckBoxBlock>div>label::before{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid var(--green-color);
+    top: -4px;
+    border-radius: 2px;
+}
+.CheckBoxBlock>div>label::after{
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 0C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3L0 21C0 21.7956 0.316071 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24H21C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.316071 21.7956 0 21 0L3 0ZM18.045 7.455C18.2533 7.66313 18.3718 7.94465 18.3749 8.23913C18.3779 8.53361 18.2654 8.81755 18.0615 9.03L12.0735 16.515C11.9706 16.6258 11.8464 16.7148 11.7083 16.7765C11.5702 16.8383 11.4211 16.8716 11.2699 16.8744C11.1186 16.8772 10.9684 16.8494 10.8281 16.7928C10.6879 16.7363 10.5604 16.652 10.4535 16.545L6.486 12.576C6.37547 12.473 6.28682 12.3488 6.22533 12.2108C6.16384 12.0728 6.13078 11.9238 6.12811 11.7728C6.12545 11.6217 6.15323 11.4717 6.20982 11.3316C6.2664 11.1915 6.35061 11.0643 6.45744 10.9574C6.56427 10.8506 6.69152 10.7664 6.8316 10.7098C6.97169 10.6532 7.12173 10.6254 7.27278 10.6281C7.42384 10.6308 7.57281 10.6638 7.71081 10.7253C7.84881 10.7868 7.97301 10.8755 8.076 10.986L11.217 14.1255L16.4265 7.488C16.5292 7.37695 16.6533 7.28776 16.7912 7.22575C16.9292 7.16375 17.0783 7.1302 17.2295 7.12712C17.3807 7.12404 17.531 7.15149 17.6714 7.20782C17.8118 7.26416 17.9394 7.34823 18.0465 7.455H18.045Z" fill="%23078C64"/></svg>');
+    top: -4px;
+    opacity: 0;
+    z-index: 1;
+}
+.CheckBoxBlock>div>input:checked + label::before{
+    background-color: var(--white-color);
+}
+.CheckBoxBlock>div>input:checked + label::after{
+    opacity: 1;
+}
+
+.RadioBoxBlock>div:first-child{
+    margin-left: 0;
+}
+.RadioBoxBlock>div>label{
+    font-size: 16px;
+    color: var(--black2-color);
+    padding-left: 26px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.RadioBoxBlock>div>label::before{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #9B9EAA;
+}
+.RadioBoxBlock>div>label::after{
+    background-image: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 5px;
+    top: 7px;
+}
+.RadioBoxBlock>div input:checked + label::before{
+    background-color: transparent;
+}
+.RadioBoxBlock>div:first-child input:checked + label::after{
+    background-color: var(--green-color);
+}
+.RadioBoxBlock>div:first-child input:checked + label::before{
+    border-color: var(--green-color);
+}
+.RadioBoxBlock>div:last-child input:checked + label::after{
+    background-color: var(--red-color);
+}
+.RadioBoxBlock>div:last-child input:checked + label::before{
+    border-color: var(--red-color);
+}
+.DocDetailHeader{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.DocDetailLists li{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 24px;
+}
+.DocDetailLists li:last-child{
+    margin-bottom: 0;
+}
+.DocDetailLists li span{
+    font-size: 20px;
+}
+.DocDetailCheck{
+    background-color: var(--green-color);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+}
+.bgnone{
+    background-color: transparent;
+    cursor: auto;
+}
+.BgShow .InColumnBottom:empty{
+    background-color: var(--blue2-gray2-color) !important;
+}
+.BgShowWhite .InColumnBottom:empty{
+    background-color: var(--white-color) !important;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+    .DayTop>span,
+    .DayTop>span>small{
+        font-size: 16px;
+    }
+    .SurgenSpecial{
+        padding: 6px;
+    }
+    .InColumnTop h6{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .TableBlockInner{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .DayTop .FullResult{
+        background-color: var(--greenlight3-color);
+    }
+    .DayTop .halfResult{
+        background-color: var(--yellowlight-color);
+    }
+    .DayTop .quaterResult{
+        background-color: var(--redlight-color);
+    }
+    .DayTop{
+        padding: 0;
+        border-radius: 6px;
+        border: 1px solid var(--primary-color);
+        background-color: var(--white-color);
+    }
+    .DayTop.active{
+        background-color: var(--primary-color);
+    }
+    .DayTop>span{
+        display: block;
+        padding: 5px;
+    }
+    .DayTop.active>span{
+        color: var(--white-color);
+    }
+    .DayTop>label{
+        justify-content: center;
+        -webkit-justify-content: center;
+        gap: 0;
+        margin: 0;
+        border-radius: 0 0 6px 6px;
+        border-top: 1px solid var(--primary-color);
+        padding: 2px;
+        position: relative;
+    }
+    .DayTop>label::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%) rotate(45deg);
+        -webkit-transform: translateX(-50%) rotate(45deg);
+        width: 8px;
+        height: 8px;
+        background-color: var(--greenlight3-color);
+        border-right: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+        border-radius: 0 0 3px 0;
+        display: none;
+    }
+    .DayTop.active>label::after{
+        display: block;
+    }
+    .DayTop>label.FullResult::after{
+        background-color: var(--greenlight3-color);
+    }
+    .DayTop>label.halfResult::after{
+        background-color: var(--yellowlight-color);
+    }
+    .DayTop>label.quaterResult::after{
+        background-color: var(--redlight-color);
+    }
+    .DayTop>label span{
+        font-size: 12px;
+    }
+    .DayTop .ProgressBar,
+    .DaysRow .Columns:first-child{
+        display: none;
+    }
+    .DaysRow{
+        grid-template-columns: none;
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        gap: 0;
+        margin-left: -7px;
+        margin-right: -7px;
+        position: relative;
+        padding-bottom: 44px;
+        margin-bottom: 40px;
+    }
+    .DaysRow .Columns{
+        border: none;
+        flex: 0 0 14.28%;
+        -webkit-flex: 0 0 14.28%;
+        max-width: 14.28%;
+        padding: 0 7px;
+    }
+    .SurgenSpecial{
+        position: absolute;
+        left: 7px;
+        bottom: 0;
+        width: calc(100% - 14px);
+        display: none;
+        background-color: var(--blue4-gray4-color);
+        border-radius: 6px;
+        padding: 5px 7px;
+        border: 1px solid transparent;
+    }
+    .DayTop.active + .SurgenSpecial{
+        display: block;
+    }
+    .SurgenSpecial.FullResult{
+        border-color: var(--green-color);
+    }
+    .SurgenSpecial ul{
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        justify-content: space-evenly;
+        -webkit-justify-content: space-evenly;
+        gap: 6px;
+    }
+    .SurgenSpecial li .ProgressBarArea{
+        gap: 4px;
+    }
+    .SurgenSpecial ul .ProgressBar{
+        min-width: 50px;
+    }
+
+    .TheatreLeft{
+        flex: 0 0 25%;
+        -webkit-flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .TheatreRight{
+        flex: 0 0 calc(100% - 25%);
+        -webkit-flex: 0 0 calc(100% - 25%);
+        max-width: calc(100% - 25%);
+    }
+    .TheatreColumns .InColumn{
+        display: none;
+    }
+    .TheatreColumns,
+    .TheatreColumns .InColumn.show{
+        display: block;
+    }
+    .topBothBtn{
+        padding: 32px 0;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        gap: 5px;
+    }
+    .RightBothBtn{
+        gap: 10px;
+    }
+    .MobileSpaceShow.DaysRow{
+        margin-left: -3px;
+        margin-right: -3px;
+        padding-bottom: 0;
+        margin-bottom: 32px;
+    }
+    .MobileSpaceShow.DaysRow .Columns{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+    .Bookers{
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .EditRotaTable{
+        padding-bottom: 20px;
+    }
+    .topBothBtn{
+        padding: 32px 0;
+        position: relative;
+    }
+    .LeftBothBtn>span,
+    .LeftBothBtn>div+a,
+    .RightBothBtn>button+button,
+    .dateUpdates span{
+        display: none;
+    }
+    .DayTop>span{
+        font-size: 12px;
+        font-weight: var(--regular400);
+        padding: 0;
+    }
+    .DayTop>span small{
+        font-weight: var(--bold700);
+    }
+    .SurgenSpecial ul .ProgressBar{
+        min-width: 30px;
+    }
+    .MobileSpaceShow .DayTop{
+        padding: 24px 3px;
+        border-radius: 12px;
+    }
+    .MobileSpaceShow .DayTop>span small{
+        font-size: 14px;
+    }
+    .dateUpdates{
+        font-weight: var(--regular400);
+        position: absolute;
+        left: 0;
+        bottom: calc(100% + 10px);
+        width: 100%;
+        border: none;
+    }
+    .MobileSpaceShow .DayTop{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .SessionTemplate .DayTop{
+        min-height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .SessionTemplate .DayTop span small{
+        font-weight: var(--regular400);
+    } 
+}
+
+@media screen and (max-width: 575px){
+    .topBothBtn{
+        gap: 15px;
+    }
+    .LeftBothBtn,
+    .RightBothBtn{
+        flex: 1;
+        -webkit-flex: 1;
+    }
+    .LeftBothBtn>button,
+    .RightBothBtn>button{
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .SurgenSpecial ul .ProgressBar{
+        min-width: 26px;
+    }
+}

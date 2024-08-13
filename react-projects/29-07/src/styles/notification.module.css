@@ -1,0 +1,49 @@
+.notificationPage{
+    max-width: 672px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius24);
+    margin: 56px auto 0;
+}
+.notificationTop{
+    padding: 20px 24px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+}
+.notificationData{
+    padding: 0 24px;
+}
+
+/* Staff Notification */
+.Staffnotification li{
+    border: 1px solid var(--primary-color);
+    border-radius: var(--radius8);
+    padding: 15px 10px;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .notificationPage{
+        margin-top: 0;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        border: none;
+        border-radius: 0;
+    }
+    .notificationTop{
+        padding: 24px 16px;
+        border-bottom: none;
+    }
+    .notificationData{
+        padding: 0;
+    }
+    .Staffnotification{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,161 @@
+.header{
+    background-color: var(--gray2-color);
+    padding: 12px 58px;
+}
+.DashRightHead{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    gap: 40px;
+}
+.UserPBtn{
+    color: var(--primary-color) !important;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 8px;
+    -webkit-gap: 8px;
+    padding: 0;
+    text-align: left;
+    background-color: transparent !important;
+    border: none;
+    margin-left: auto;
+}
+.UserPBtn::after{
+    border: none;
+    margin: 0;
+    vertical-align: inherit;
+    background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.47075 10.4714C8.2104 10.7318 7.78829 10.7318 7.52794 10.4714L3.52794 6.4714C3.26759 6.21106 3.26759 5.78895 3.52795 5.5286C3.78829 5.26825 4.2104 5.26825 4.47075 5.5286L7.99935 9.05719L11.5279 5.5286C11.7883 5.26825 12.2104 5.26825 12.4708 5.5286C12.7311 5.78895 12.7311 6.21106 12.4708 6.47141L8.47075 10.4714Z" fill="%23295597"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 16px;
+    height: 16px;
+}
+.HnotiIcon{
+    width: 48px;
+    height: 48px;
+    line-height: 48px !important;
+    text-align: center;
+    background-color: var(--white-color) !important;
+    border-radius: 50%;
+    position: relative;
+    border: none !important;
+    padding: 0;
+    box-shadow: none !important;
+}
+.HnotiIcon::before{
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--red-color);
+}
+.HnotiIcon::after{
+    display: none;
+}
+.NotiDropDown{
+    width: 476px;
+    border-radius: var(--radius8);
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    overflow: hidden;
+}
+.DropHeader>h6{
+    color: var(--black2-color);
+}
+.DropHeader,
+.DropFooter{
+    background-color: var(--blue2-gray2-color);
+    text-align: center;
+    position: relative;
+    padding: 13px 15px;
+}
+.DropHeader{
+    padding: 42px 24px;
+}
+.DropClose{
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    cursor: pointer;
+}
+.DropFooter>a{
+    color: var(--black2-color);
+    border-bottom: 1px solid var(--black2-color);
+    padding-bottom: 2px;
+    display: inline-block;
+    font-weight: var(--bold700);
+}
+.ProfileDropDown button{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 14px;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    gap: 6px;
+    font-weight: var(--regular400);
+    transition: all 0.3s ease-in-out;
+}
+.ProfileDropDown button:hover,
+.ProfileDropDown button:focus,
+.ProfileDropDown button:active{
+    background-color: var(--blue4-gray4-color);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .header{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .header{
+        padding: 12px 4px;
+    }
+    .HeaderLogo{
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header{
+        padding: 12px 4px;
+        background-color: var(--primary-color);
+    }
+    .header .MobileFirstColumn,
+    .header .MobileLastColumn{
+        flex: 0 0 47px !important;
+    }
+    .HnotiIcon{
+        width: 32px;
+        height: 32px;
+        line-height: 32px !important;
+    }
+    .HnotiIcon::before{
+        width: 9px;
+        height: 9px;
+        right: 6px;
+        top: 3px;
+    }
+    .MobileLogo{
+        width: 222px;
+    }
+}

@@ -1,0 +1,106 @@
+.UserProfile{
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius24);
+    max-width: 846px;
+    margin: 56px auto 0;
+}
+.ProfileHeader{
+    background-color: var(--gray2-color);
+    padding: 16px 40px;
+    border-radius: var(--radius24) var(--radius24) 0 0;
+}
+.ProfileEdit{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.ProfileHeader>h5,
+.ProfileHeader>h6{
+    color: var(--black2-color);
+}
+.ProfileHeader>p{
+    max-width: 623px;
+    margin: 0 auto;
+}
+
+.ProfileBody{
+    padding: 50px 72px 56px;
+}
+.ProfileBodyRow{
+    column-gap: 30px;
+    -webkit-column-gap: 30px;
+}
+.ProfileBodyRow>*:not(:last-child){
+    max-width: calc(50% - 15px);
+}
+.ProfileSaveBtn{
+    max-width: 457px !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 991px){
+    .ProfileBody{
+        padding: 36px 16px;
+    }
+    .ProfileBodyRow{
+        column-gap: 16px;
+        -webkit-column-gap: 16px;
+    }
+    .ProfileBodyRow>*:not(:last-child){
+        max-width: calc(50% - 8px);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .UserProfile{
+        margin-top: 0;
+        border: none;
+        border-radius: 0;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+    }
+    .ProfileHeader{
+        padding: 24px 16px;
+        border-radius: 0;
+    }
+    .DownloadUserData{
+        width: 40px;
+        height: 40px;
+        line-height: 34px;
+        border-radius: 50%;
+        padding: 0;
+        display: block;
+        text-align: center;
+        border: 1px solid var(--border-color);
+        background-color: var(--white-color);
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .ProfileBody{
+        padding: 36px 16px 0;
+    }
+    .ProfileBodyRow{
+        column-gap: 0;
+        -webkit-column-gap: 0;
+    }
+    .ProfileBodyRow>*:not(:last-child){
+        max-width: 100%;
+    }
+    .ProfileSaveBtn,
+    .ProfileSaveBtn + button{
+        max-width: none !important;
+        width: calc(100% - 24px) !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ProfileSaveBtn{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
